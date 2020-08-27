@@ -82,7 +82,12 @@
     browser = webdriver.Chrome() 
     browser.get('https://images.google.com/?gws_rd=ssl') 
 
-    print(browser.title)
+    titl = browser.title
+
+    if titl is not None:
+        print('page have a title')
+    else:
+        print("page don't have a title")
     
     ###### Program End Here  ######
 
